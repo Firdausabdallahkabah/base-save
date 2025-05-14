@@ -26,7 +26,7 @@ const wagmiConfig = createConfig({
 
 export function Providers({ children }) {
   const [mounted, setMounted] = useState(false);
-  
+
   // This is to prevent hydration errors with RainbowKit
   useEffect(() => {
     setMounted(true);
@@ -34,16 +34,16 @@ export function Providers({ children }) {
 
   return (
     <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider 
-        chains={chains} 
+      <RainbowKitProvider
+        chains={chains}
         theme={{
           lightMode: lightTheme({
-            accentColor: '#0052ff', // Base blue
+            accentColor: '#6366f1', // Indigo color
             accentColorForeground: 'white',
             borderRadius: 'medium',
           }),
           darkMode: darkTheme({
-            accentColor: '#0052ff', // Base blue
+            accentColor: '#6366f1', // Indigo color
             accentColorForeground: 'white',
             borderRadius: 'medium',
           }),

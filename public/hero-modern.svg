@@ -1,0 +1,59 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background elements -->
+  <path d="M300 50C400 50 500 100 550 200C600 300 500 350 400 350C300 350 200 300 150 200C100 100 200 50 300 50Z" fill="#6366f1" fill-opacity="0.1"/>
+  <path d="M250 100C350 100 450 150 500 250C550 350 450 400 350 400C250 400 150 350 100 250C50 150 150 100 250 100Z" fill="#00e5b3" fill-opacity="0.1"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="150" cy="150" r="10" fill="#6366f1" fill-opacity="0.5"/>
+  <circle cx="450" cy="100" r="8" fill="#00e5b3" fill-opacity="0.5"/>
+  <circle cx="400" cy="300" r="12" fill="#ffd700" fill-opacity="0.5"/>
+  <circle cx="200" cy="250" r="15" fill="#6366f1" fill-opacity="0.3"/>
+  
+  <!-- Main elements -->
+  <g transform="translate(200, 100)">
+    <!-- Wallet/vault -->
+    <rect x="0" y="0" width="200" height="160" rx="15" fill="#6366f1" />
+    <rect x="10" y="10" width="180" height="140" rx="10" fill="#f8fafc" />
+    
+    <!-- Goal progress bars -->
+    <rect x="30" y="40" width="140" height="12" rx="6" fill="#e2e8f0" />
+    <rect x="30" y="40" width="98" height="12" rx="6" fill="#6366f1" />
+    <text x="30" y="30" font-family="Arial" font-size="12" fill="#64748b">Vacation Fund: 70%</text>
+    
+    <rect x="30" y="80" width="140" height="12" rx="6" fill="#e2e8f0" />
+    <rect x="30" y="80" width="56" height="12" rx="6" fill="#00e5b3" />
+    <text x="30" y="70" font-family="Arial" font-size="12" fill="#64748b">New Laptop: 40%</text>
+    
+    <rect x="30" y="120" width="140" height="12" rx="6" fill="#e2e8f0" />
+    <rect x="30" y="120" width="140" height="12" rx="6" fill="#ffd700" />
+    <text x="30" y="110" font-family="Arial" font-size="12" fill="#64748b">Emergency Fund: 100%</text>
+    
+    <!-- Lock icon -->
+    <circle cx="170" cy="25" r="15" fill="#6366f1" fill-opacity="0.2"/>
+    <path d="M165 25V20C165 17.2386 167.239 15 170 15V15C172.761 15 175 17.2386 175 20V25" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+    <rect x="163" y="25" width="14" height="10" rx="2" fill="#6366f1"/>
+  </g>
+  
+  <!-- Coins -->
+  <g transform="translate(150, 280)">
+    <circle cx="0" cy="0" r="25" fill="#ffd700" fill-opacity="0.9"/>
+    <text x="-7" y="5" font-family="Arial" font-size="20" font-weight="bold" fill="white">$</text>
+  </g>
+  
+  <g transform="translate(400, 250)">
+    <circle cx="0" cy="0" r="20" fill="#ffd700" fill-opacity="0.9"/>
+    <text x="-6" y="4" font-family="Arial" font-size="16" font-weight="bold" fill="white">$</text>
+  </g>
+  
+  <!-- Base logo -->
+  <g transform="translate(450, 150)">
+    <circle cx="0" cy="0" r="30" fill="#0052FF"/>
+    <path d="M0 -20L20 10L0 5L-20 10L0 -20Z" fill="white"/>
+    <path d="M0 10L-20 15L0 35L20 15L0 10Z" fill="white"/>
+  </g>
+  
+  <!-- Connecting lines -->
+  <path d="M180 280 Q 250 200 300 180" stroke="#6366f1" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M400 250 Q 350 200 300 180" stroke="#00e5b3" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M450 150 Q 400 150 350 160" stroke="#0052FF" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background elements -->
+  <circle cx="300" cy="200" r="150" fill="#6366f1" fill-opacity="0.1"/>
+  <circle cx="300" cy="200" r="100" fill="#6366f1" fill-opacity="0.15"/>
+  
+  <!-- Piggy bank -->
+  <g transform="translate(220, 120) scale(1.2)">
+    <path d="M150 100C150 44.7715 116.421 0 75 0C33.5786 0 0 44.7715 0 100C0 155.228 33.5786 200 75 200C116.421 200 150 155.228 150 100Z" fill="#6366f1" fill-opacity="0.8"/>
+    <ellipse cx="45" cy="70" rx="10" ry="15" fill="white" fill-opacity="0.6"/>
+    <rect x="140" y="90" width="20" height="40" rx="5" fill="#6366f1"/>
+    <rect x="-10" y="90" width="20" height="40" rx="5" fill="#6366f1"/>
+    <rect x="60" y="-10" width="15" height="25" rx="7.5" fill="#6366f1"/>
+  </g>
+  
+  <!-- Coins -->
+  <circle cx="180" cy="280" r="25" fill="#ffd700" stroke="#e6c200" stroke-width="3"/>
+  <circle cx="150" cy="310" r="20" fill="#ffd700" stroke="#e6c200" stroke-width="3"/>
+  <circle cx="400" cy="290" r="22" fill="#ffd700" stroke="#e6c200" stroke-width="3"/>
+  <circle cx="440" cy="270" r="18" fill="#ffd700" stroke="#e6c200" stroke-width="3"/>
+  
+  <!-- Base logo -->
+  <g transform="translate(420, 100) scale(1.5)">
+    <circle cx="20" cy="20" r="20" fill="#0052FF"/>
+    <path d="M20 4.5L33.5 28.5L20 22.5L6.5 28.5L20 4.5Z" fill="white"/>
+    <path d="M20 25L6.5 31L20 45L33.5 31L20 25Z" fill="white"/>
+  </g>
+  
+  <!-- Dollar signs -->
+  <text x="185" y="285" font-family="Arial" font-size="24" font-weight="bold" fill="white">$</text>
+  <text x="155" y="315" font-family="Arial" font-size="18" font-weight="bold" fill="white">$</text>
+  <text x="405" y="295" font-family="Arial" font-size="20" font-weight="bold" fill="white">$</text>
+  <text x="445" y="275" font-family="Arial" font-size="16" font-weight="bold" fill="white">$</text>
+</svg>

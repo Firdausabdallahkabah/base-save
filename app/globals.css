@@ -3,8 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #0052ff; /* Base blue */
-  --primary-dark: #003ecb;
+  --primary: #6366f1; /* Indigo color */
+  --primary-dark: #4f46e5;
+  --primary-light: #818cf8;
   --secondary: #00e5b3; /* Mint green */
   --accent: #ffd700; /* Gold for achievements */
   --error: #ff4d4f;
@@ -26,11 +27,37 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --primary: #0052ff;
-    --primary-dark: #003ecb;
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --primary-light: #818cf8;
     --secondary: #00e5b3;
     --accent: #ffd700;
   }
+}
+
+/* Direct color overrides for Tailwind classes */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+.hover\:bg-primary:hover {
+  background-color: var(--primary) !important;
+}
+
+.hover\:text-primary:hover {
+  color: var(--primary) !important;
+}
+
+.hover\:border-primary:hover {
+  border-color: var(--primary) !important;
 }
 
 body {

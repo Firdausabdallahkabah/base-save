@@ -7,7 +7,7 @@ import { useAccount } from 'wagmi';
 
 export default function GoalsPage() {
   const { address, isConnected } = useAccount();
-  
+
   // This would normally come from a blockchain query or API
   const [goals, setGoals] = useState([
     {
@@ -91,30 +91,30 @@ export default function GoalsPage() {
             {goals.map((goal) => {
               const progress = calculateProgress(goal.currentAmount, goal.targetAmount);
               const isCompleted = goal.status === 'completed';
-              
+
               return (
                 <div
                   key={goal.id}
                   className="group bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 overflow-hidden card-hover hover:border-primary/30 dark:hover:border-primary/30 transition-all"
                 >
                   {/* Goal header with gradient background */}
-                  <div className={`p-6 ${isCompleted ? 'bg-gradient-to-r from-green-500/10 to-green-600/10 dark:from-green-500/20 dark:to-green-600/20' : 'bg-gradient-to-r from-primary/10 to-blue-600/10 dark:from-primary/20 dark:to-blue-600/20'}`}>
+                  <div className={`p-6 ${isCompleted ? 'bg-gradient-to-r from-green-500/10 to-green-600/10 dark:from-green-500/20 dark:to-green-600/20' : 'bg-gradient-to-r from-primary/10 to-indigo-600/10 dark:from-primary/20 dark:to-indigo-600/20'}`}>
                     <div className="flex justify-between items-start">
                       <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">{goal.title}</h3>
                       <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        isCompleted 
-                          ? 'bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-400' 
+                        isCompleted
+                          ? 'bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-400'
                           : 'bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-400'
                       }`}>
                         {isCompleted ? 'Completed' : 'Active'}
                       </span>
                     </div>
-                    
+
                     <p className="text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">
                       {goal.description}
                     </p>
                   </div>
-                  
+
                   <div className="p-6">
                     {/* Progress bar */}
                     <div className="mb-6">
@@ -124,12 +124,12 @@ export default function GoalsPage() {
                       </div>
                       <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
                         <div
-                          className={`h-3 rounded-full transition-all ${isCompleted ? 'bg-gradient-to-r from-green-500 to-green-400' : 'bg-gradient-to-r from-primary to-blue-500'}`}
+                          className={`h-3 rounded-full transition-all ${isCompleted ? 'bg-gradient-to-r from-green-500 to-green-400' : 'bg-gradient-to-r from-primary to-indigo-500'}`}
                           style={{ width: `${progress}%` }}
                         ></div>
                       </div>
                     </div>
-                    
+
                     {/* Goal details */}
                     <div className="grid grid-cols-2 gap-x-6 gap-y-4 mb-6">
                       <div className="bg-gray-50 dark:bg-gray-900/30 rounded-lg p-3">
@@ -156,7 +156,7 @@ export default function GoalsPage() {
                         </p>
                       </div>
                     </div>
-                    
+
                     {/* Action buttons */}
                     <div className="flex space-x-3">
                       {goal.status === 'active' && (

@@ -8,51 +8,64 @@ export default function Home() {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-white via-blue-50 to-gray-50 dark:from-gray-900 dark:via-blue-950/30 dark:to-gray-800 py-24 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-white via-indigo-50 to-gray-50 dark:from-gray-900 dark:via-indigo-950/20 dark:to-gray-800 py-24 md:py-32">
         {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full filter blur-3xl animate-blob"></div>
           <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-secondary/10 rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
           <div className="absolute bottom-1/4 right-1/3 w-72 h-72 bg-accent/10 rounded-full filter blur-3xl animate-blob animation-delay-4000"></div>
+          <div className="absolute top-1/2 left-1/3 w-40 h-40 bg-primary/5 rounded-full filter blur-2xl animate-blob animation-delay-3000"></div>
+          <div className="absolute bottom-1/3 left-1/2 w-56 h-56 bg-secondary/5 rounded-full filter blur-2xl animate-blob animation-delay-1000"></div>
         </div>
 
-        <div className="container relative z-10 mx-auto px-4 text-center">
-          <div className="inline-block mb-4 px-6 py-2 bg-primary/10 dark:bg-primary/20 rounded-full">
-            <span className="text-primary dark:text-primary-light font-medium">Built on Base</span>
-          </div>
-          
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary-dark to-secondary">
-            <span className="block">Save with purpose,</span>
-            <span className="block">achieve your goals</span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto">
-            A decentralized savings platform that helps you set goals, 
-            lock funds, and earn rewards — all on Base.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link 
-              href="/create" 
-              className="px-8 py-4 bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary text-white font-medium rounded-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
-            >
-              Start Saving
-            </Link>
-            <Link 
-              href="/goals" 
-              className="px-8 py-4 bg-white/80 backdrop-blur-sm dark:bg-gray-800/80 text-primary border border-primary/20 hover:border-primary hover:bg-gray-50 dark:hover:bg-gray-700 font-medium rounded-lg transition-all shadow-md hover:shadow-lg hover:-translate-y-1"
-            >
-              View Goals
-            </Link>
-          </div>
-          
-          <div className="mt-16 flex justify-center">
-            <div className="p-1 border border-gray-200 dark:border-gray-700 rounded-xl bg-white/30 dark:bg-gray-800/30 backdrop-blur-sm shadow-lg">
-              <img 
-                src="https://assets.coinbase.com/assets/base.38d8a9b1.svg" 
-                alt="Base" 
-                className="h-8 w-auto mx-2"
-              />
+        <div className="container relative z-10 mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center">
+            <div className="lg:w-1/2 text-center lg:text-left">
+              <div className="inline-block mb-4 px-6 py-2 bg-primary/10 dark:bg-primary/20 rounded-full">
+                <span className="text-primary dark:text-primary-light font-medium">Built on Base</span>
+              </div>
+
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary-dark to-secondary">
+                <span className="block">Save with purpose,</span>
+                <span className="block">achieve your goals</span>
+              </h1>
+
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-xl">
+                A decentralized savings platform that helps you set goals,
+                lock funds, and earn rewards — all on Base.
+              </p>
+
+              <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mb-10 lg:mb-0">
+                <Link
+                  href="/create"
+                  className="px-8 py-4 bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary text-white font-medium rounded-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
+                >
+                  Start Saving
+                </Link>
+                <Link
+                  href="/goals"
+                  className="px-8 py-4 bg-white/80 backdrop-blur-sm dark:bg-gray-800/80 text-primary border border-primary/20 hover:border-primary hover:bg-gray-50 dark:hover:bg-gray-700 font-medium rounded-lg transition-all shadow-md hover:shadow-lg hover:-translate-y-1"
+                >
+                  View Goals
+                </Link>
+              </div>
+            </div>
+
+            <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center lg:justify-end">
+              <div className="relative">
+                <img
+                  src="/hero-modern.svg"
+                  alt="BaseSave Illustration"
+                  className="w-full max-w-lg"
+                />
+                <div className="absolute bottom-0 right-0 p-2 bg-white/30 dark:bg-gray-800/30 backdrop-blur-sm rounded-lg border border-gray-200 dark:border-gray-700 shadow-lg">
+                  <img
+                    src="/base-logo.svg"
+                    alt="Base"
+                    className="h-8 w-auto"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -62,7 +75,7 @@ export default function Home() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-16">Key Features</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
               <div className="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-full flex items-center justify-center mb-6">
@@ -76,7 +89,7 @@ export default function Home() {
                 Define an amount, timeframe, and description for your financial goals. Whether it's for a vacation, gadget, or emergency fund.
               </p>
             </div>
-            
+
             <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
               <div className="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-full flex items-center justify-center mb-6">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-primary">
@@ -89,7 +102,7 @@ export default function Home() {
                 Funds are locked in a secure smart contract until your goal is reached or the time expires, helping you stay committed.
               </p>
             </div>
-            
+
             <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
               <div className="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 rounded-full flex items-center justify-center mb-6">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-primary">
@@ -111,7 +124,7 @@ export default function Home() {
       <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-16">How It Works</h2>
-          
+
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row items-center mb-16">
               <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
@@ -128,7 +141,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            
+
             <div className="flex flex-col md:flex-row-reverse items-center mb-16">
               <div className="md:w-1/2 mb-8 md:mb-0 md:pl-8">
                 <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm">
@@ -144,7 +157,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            
+
             <div className="flex flex-col md:flex-row items-center mb-16">
               <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
                 <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm">
@@ -160,7 +173,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            
+
             <div className="flex flex-col md:flex-row-reverse items-center">
               <div className="md:w-1/2 mb-8 md:mb-0 md:pl-8">
                 <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm">
@@ -187,8 +200,8 @@ export default function Home() {
           <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
             Join thousands of users who are achieving their financial goals with BaseSave.
           </p>
-          <Link 
-            href="/create" 
+          <Link
+            href="/create"
             className="px-8 py-3 bg-white text-primary hover:bg-gray-100 font-medium rounded-lg transition-colors inline-block"
           >
             Create Your First Goal
