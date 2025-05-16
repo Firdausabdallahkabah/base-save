@@ -53,15 +53,19 @@ export default function Home() {
 
             <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center lg:justify-end">
               <div className="relative">
-                <img
+                <Image
                   src="/hero-modern.svg"
                   alt="BaseSave Illustration"
+                  width={600}
+                  height={400}
                   className="w-full max-w-lg"
                 />
                 <div className="absolute bottom-0 right-0 p-2 bg-white/30 dark:bg-gray-800/30 backdrop-blur-sm rounded-lg border border-gray-200 dark:border-gray-700 shadow-lg">
-                  <img
+                  <Image
                     src="/base-logo.svg"
                     alt="Base"
+                    width={32}
+                    height={32}
                     className="h-8 w-auto"
                   />
                 </div>
@@ -86,7 +90,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Set Savings Goals</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Define an amount, timeframe, and description for your financial goals. Whether it's for a vacation, gadget, or emergency fund.
+                Define an amount, timeframe, and description for your financial goals. Whether it&apos;s for a vacation, gadget, or emergency fund.
               </p>
             </div>
 

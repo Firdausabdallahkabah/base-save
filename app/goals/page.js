@@ -77,7 +77,7 @@ export default function GoalsPage() {
           <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 text-center">
             <h3 className="text-xl font-semibold mb-4">No Goals Yet</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
-              You haven't created any savings goals yet. Create your first goal to get started!
+              You haven&apos;t created any savings goals yet. Create your first goal to get started!
             </p>
             <Link
               href="/create"

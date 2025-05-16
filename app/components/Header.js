@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -60,9 +61,11 @@ export default function Header() {
               BaseSave
             </Link>
             <div className="ml-2 flex items-center">
-              <img
+              <Image
                 src="/base-logo.svg"
                 alt="Base"
+                width={20}
+                height={20}
                 className="h-5 w-auto"
               />
             </div>

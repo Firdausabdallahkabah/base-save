@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -198,9 +199,11 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="flex items-center bg-white dark:bg-gray-800 rounded-full px-3 py-1 border border-gray-200 dark:border-gray-700 hover:border-primary/30 dark:hover:border-primary/30 transition-colors"
             >
-              <img
+              <Image
                 src="/base-logo.svg"
                 alt="Base"
+                width={20}
+                height={20}
                 className="h-5 w-auto"
               />
             </a>
