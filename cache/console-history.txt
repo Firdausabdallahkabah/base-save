@@ -1,3 +1,12 @@
+.exit
+console.log("Balance:", ethers.formatEther(await ethers.provider.getBalance("0x251E1Ef97080Beea4e3a11479c82241F5694cD27")));
+y
+.exit
+console.log("Balance:", ethers.formatEther(await ethers.provider.getBalance("0x251E1Ef97080Beea4e3a11479c82241F5694cD27")));
+y
+.exit
+const [signer] = await ethers.getSigners(); console.log("Address:", signer.address); console.log("Balance:", ethers.formatEther(await ethers.provider.getBalance(signer.address)));
+y
 npx hardhat run scripts/deploy-sepolia.js --network base-sepolia
 node scripts/generate-wallet.js
 consoconsole.log("Private Key:", wallet.privateKey);

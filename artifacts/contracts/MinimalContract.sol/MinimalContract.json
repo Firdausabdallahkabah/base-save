@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MinimalContract",
+  "sourceName": "contracts/MinimalContract.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601357603a908160198239f35b600080fdfe600080fdfea264697066735822122028ffbe174e1793bfe6620b5de6ac9619f56a7a78eedbe213052a3d369526973064736f6c63430008140033",
+  "deployedBytecode": "0x600080fdfea264697066735822122028ffbe174e1793bfe6620b5de6ac9619f56a7a78eedbe213052a3d369526973064736f6c63430008140033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

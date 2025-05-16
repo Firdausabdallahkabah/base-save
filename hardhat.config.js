@@ -38,7 +38,8 @@ module.exports = {
       url: BASE_SEPOLIA_RPC_URL,
       accounts: [PRIVATE_KEY],
       chainId: 84532,
-      gasPrice: 1000000000, // 1 gwei
+      gasPrice: 30000000, // 0.03 gwei - further reduced
+      gasLimit: 800000, // Further reduced gas limit
     },
     "base-goerli": {
       url: BASE_GOERLI_RPC_URL,

@@ -1010,6 +1010,199 @@
       "artifacts": [
         "IERC20Permit"
       ]
+    },
+    "C:\\Users\\kabahfirdaus\\Desktop\\base-save\\contracts\\SimpleGoalTracker.sol": {
+      "lastModificationDate": 1747430455725,
+      "contentHash": "ef22cda173c3f8418ad7bab1864b591d",
+      "sourceName": "contracts/SimpleGoalTracker.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./SimpleGoalNFT.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SimpleGoalTracker"
+      ]
+    },
+    "C:\\Users\\kabahfirdaus\\Desktop\\base-save\\contracts\\SimpleGoalNFT.sol": {
+      "lastModificationDate": 1747430441874,
+      "contentHash": "11b0aa4b87785f91f04350cf13800f7e",
+      "sourceName": "contracts/SimpleGoalNFT.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SimpleGoalNFT"
+      ]
+    },
+    "C:\\Users\\kabahfirdaus\\Desktop\\base-save\\contracts\\TestContract.sol": {
+      "lastModificationDate": 1747430590620,
+      "contentHash": "afab04e92cb24e1855db97b3f1370d98",
+      "sourceName": "contracts/TestContract.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "TestContract"
+      ]
+    },
+    "C:\\Users\\kabahfirdaus\\Desktop\\base-save\\contracts\\MinimalContract.sol": {
+      "lastModificationDate": 1747430929470,
+      "contentHash": "cbd6bc59cd2953639a847b28b77bac5a",
+      "sourceName": "contracts/MinimalContract.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MinimalContract"
+      ]
+    },
+    "C:\\Users\\kabahfirdaus\\Desktop\\base-save\\contracts\\MinimalGoalNFT.sol": {
+      "lastModificationDate": 1747431370997,
+      "contentHash": "b1e04333ddfcc2e91c420503347c34b6",
+      "sourceName": "contracts/MinimalGoalNFT.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MinimalGoalNFT"
+      ]
     }
   }
 }
