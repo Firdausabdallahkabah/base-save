@@ -1,0 +1,4 @@
+npx hardhat run scripts/deploy-sepolia.js --network base-sepolia
+node scripts/generate-wallet.js
+consoconsole.log("Private Key:", wallet.privateKey);
+const wallet = ethers.Wallet.createRandom();
